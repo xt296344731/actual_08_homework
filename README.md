@@ -13,6 +13,32 @@
     - kk kk的目录
         + zuoye.py 作业代码文件
 
+
+## 1.桌面软件添加代码（推荐初学者）
+
+
+[详细说明](https://github.com/shengxinjing/my_blog/issues/4)
+
+
+
+## 2.命令行添加代码
+
+```
+第一次使用
+git init
+mkdir woniu
+echo  print 123 >> woniu/zuoye.py
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/51reboot/actual_08_homework.git
+git push -u origin master
+
+后面添加代码，只需要下面三行即可
+git add .
+git commit -m "first commit"
+git push -u origin master
+```
+
 > 用命令行操作，要添加ssh的公钥到github里，操作方法
 
 
@@ -37,27 +63,7 @@ vim ~/.ssh/id_rsa.pub
 添加完成后再次执行git clone就可以成功克隆github上的代码库了。
 ```
 
-##1.命令行添加代码
-
-```
-第一次使用
-git init
-mkdir woniu
-echo  print 123 >> woniu/zuoye.py
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/51reboot/actual_07_homework.git
-git push -u origin master
-
-后面添加代码，只需要下面三行即可
-git add .
-git commit -m "first commit"
-git push -u origin master
-```
-
-## 2.桌面软件添加代码（推荐初学者）
 
 
-[详细说明](https://github.com/shengxinjing/my_blog/issues/4)
 
 账号没有加到reboot群组里的 请随时联系我
