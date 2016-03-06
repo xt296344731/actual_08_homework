@@ -2,19 +2,18 @@
 #-^- coding:utf-8 -^-
 
 list_n = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,45,33,45]
-max_num = 0
+max_x = 0
+max_y = 0
 newList = []
 for x in list_n:
-    if x > max_num:
-        max_num = x
-        newList.append(max_num)
+    if x > max_x:
+        max_x = x
 
-print newList[-2::]
+newList.append(max_x)
+list_n.remove(max_x)
 
-#list_n.remove(max_num)
-
-#for y in list_n:
-#    if y > max_num:
-#         max_num = y
-#         newList.append(max_num)
-#         print newList
+for y in list_n:
+    if y > max_y:
+         max_y = y
+newList.append(max_y)
+print newList
